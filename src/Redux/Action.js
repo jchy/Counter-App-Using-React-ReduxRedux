@@ -17,3 +17,12 @@ export const decrementCount = ({ count }) => {
     }
   };
 };
+
+export const resetCount = ({ count }) => {
+  return {
+    type: ActionTypes.RESET_COUNTER,
+    payload: {
+      count
+    }
+  };
+};

@@ -17,6 +17,12 @@ const reducer = (state = initState, action) => {
       };
       return updatedCount;
     }
+    case ActionTypes.RESET_COUNTER: {
+      const updatedCount = {
+        count: 0
+      };
+      return updatedCount;
+    }
     default:
       return state;
   }
